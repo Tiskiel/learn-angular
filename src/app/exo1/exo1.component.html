@@ -1,0 +1,16 @@
+<p [ngStyle]="{'color' : color, 
+'font-style' : fontStyle,
+'font-weight' : weightFont,
+'font-size.px' : fontSize }">{{ name }}</p>
+
+<button [disabled]="color === 'black'" (click)="putColor(blackColor)">Reset</button>
+<button [disabled]="color === blueColor" (click)="putColor(blueColor)">Blue</button>
+<button [disabled]="color === redColor" (click)="putColor(redColor)">Red</button>
+<button [disabled]="color === yellowColor" (click)="putColor(yellowColor)">yellow</button>
+<br>
+<button (click)="changeWeight('bold')">Bold</button>
+<button (click)="changeStyle('italic')">Italic</button>
+<button (click)="changeSize(50)">Big</button>
+
+
+
